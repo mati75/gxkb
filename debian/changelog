@@ -1,3 +1,9 @@
+gxkb (0.6+svn21-1) unstable; urgency=medium
+
+  * Merged latest upstream snapshot. (Closes: #757079)
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 06 Aug 2014 15:51:43 +0200
+
 gxkb (0.6-1) unstable; urgency=low
 
   * Initial release. (Closes: #714461)
