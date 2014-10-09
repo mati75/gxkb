@@ -1,6 +1,7 @@
 gxkb (0.7.2-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Bump Standards-Version. (no changes needed)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 09 Oct 2014 15:56:35 +0200
 

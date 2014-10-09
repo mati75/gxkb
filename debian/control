@@ -3,7 +3,7 @@ Priority: optional
 Section: x11
 Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
 Build-Depends: debhelper (>= 9), libgtk2.0-dev, libxklavier-dev (>= 5.0), libwnck-dev, dh-autoreconf
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://sourceforge.net/p/gxkb/
 Vcs-Browser: https://github.com/mati75/gxkb.git
 Vcs-Git: git://github.com/mati75/gxkb.git
