@@ -1,4 +1,7 @@
-/* config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Have AppIndicator */
+#undef HAVE_APPINDICATOR
 
 /* Include config.h */
 #undef HAVE_CONFIG_H
