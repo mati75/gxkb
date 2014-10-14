@@ -3,12 +3,7 @@ Upstream-Name: gxkb
 Source: http://sourceforge.net/projects/gxkb/files/
 
 Files: *
-Copyright: 2013, Dmitriy Poltavchenko <zen@root.ua>
-License: GPL-2+
-
-Files: debian/*
-Copyright: 2013, Dmitriy Poltavchenko <zen@root.ua>
-           2014, Mateusz Łukasik <mati75@linuxmint.pl>
+Copyright: 2014, Dmitriy Poltavchenko <admin@linuxhub.ru>
 License: GPL-2+
 
 Files: INSTALL
@@ -25,7 +20,7 @@ License: permissive
  This Makefile.am is free software; the Free Software Foundation
  gives unlimited permission to copy, distribute and modify it.
 
-Files: Makefile.in; aclocal.m4; configure; missing
+Files: Makefile.in aclocal.m4 configure missing
 Copyright: 1994-2013, Free Software Foundation, Inc.      
 License: permissive
  This Makefile.in is free software; the Free Software Foundation
@@ -43,7 +38,7 @@ License: GPL-2+
 
 Files: install-sh
 Copyright: 1994, X Consortium
-License: BSD
+License: BSD-3-clause
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to
  deal in the Software without restriction, including without limitation the
@@ -76,9 +71,14 @@ License: BSD
  This script is compatible with the BSD install script, but was written
  from scratch.
 
-Files: xkb-*
+Files: src/gxkb.c
 Copyright: 2008, Alexander Iliev <sasoiliev@mamul.org>
-	   2013, Dmitriy Poltavchenko <zen@root.ua>
+	   2014, Dmitriy Poltavchenko <admin@linuxhub.ru>
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2013, Dmitriy Poltavchenko <zen@root.ua>
+           2014, Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-2+
 
 License: GPL-2+
