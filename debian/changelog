@@ -1,9 +1,14 @@
-gxkb (0.7.2-1) UNRELEASED; urgency=medium
+gxkb (0.7.2-1) unstable; urgency=medium
 
   * New upstream release.
-  * Bump Standards-Version. (no changes needed)
+  * debian/copyright:
+    + Update sources date.
+    + Fix lintian errors.
+    + Update upstream contact.
+  * Bump Standards-Version to 3.9.6. (no changes needed)
+  * Add manpages for binaries file.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 09 Oct 2014 15:56:35 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 14 Oct 2014 19:22:25 +0200
 
 gxkb (0.6+svn21-1) unstable; urgency=medium
 
