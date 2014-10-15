@@ -2,11 +2,12 @@ gxkb (0.7.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/copyright:
-    + Update sources date.
-    + Fix lintian errors.
+    + Update copyright years.
+    + Use proper license names.
+    + Fix matching of Files fields.
     + Update upstream contact.
-  * Bump Standards-Version to 3.9.6. (no changes needed)
-  * Add manpages for binaries file.
+  * Bump Standards-Version to 3.9.6 (no changes needed).
+  * Add manpage for gxkb.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 14 Oct 2014 19:22:25 +0200
 
