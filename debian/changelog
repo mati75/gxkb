@@ -1,8 +1,8 @@
-gxkb (0.7.3-1) UNRELEASED; urgency=medium
+gxkb (0.7.3-1) unstable; urgency=medium
 
   * New upstream release.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Mon, 10 Nov 2014 15:41:44 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Mon, 10 Nov 2014 15:49:12 +0100
 
 gxkb (0.7.2-1) unstable; urgency=medium
 
