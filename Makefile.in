@@ -224,8 +224,8 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = src images
-EXTRA_DIST = debian COPYING CREDITS INSTALL NEWS TODO
+SUBDIRS = src images man
+EXTRA_DIST = debian man COPYING CREDITS INSTALL NEWS TODO
 all: all-recursive
 
 .SUFFIXES:
