@@ -5,6 +5,3 @@
 
 override_dh_installchangelogs:
 	dh_installchangelogs -k NEWS
-
-override_dh_builddeb:
-	dh_builddeb -- -Zxz -z9
