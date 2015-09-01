@@ -13,6 +13,7 @@
 # PARTICULAR PURPOSE.
 
 @SET_MAKE@
+
 VPATH = @srcdir@
 am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
 am__make_running_with_option = \
@@ -75,9 +76,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = man
-DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
-	$(dist_man_MANS)
+subdir = data/flags
+DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
@@ -132,10 +132,8 @@ am__uninstall_files_from_dir = { \
     || { echo " ( cd '$$dir' && rm -f" $$files ")"; \
          $(am__cd) "$$dir" && rm -f $$files; }; \
   }
-man1dir = $(mandir)/man1
-am__installdirs = "$(DESTDIR)$(man1dir)"
-NROFF = nroff
-MANS = $(dist_man_MANS)
+am__installdirs = "$(DESTDIR)$(imagesdir)"
+DATA = $(images_DATA)
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACLOCAL = @ACLOCAL@
@@ -239,8 +237,42 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-dist_man_MANS = gxkb.1
-EXTRA_DIST = $(dist_man_MANS)
+imagesdir = @datarootdir@/gxkb/flags
+images_DATA = \
+    am.png    \
+    bg.png    \
+    by.png    \
+    cz.png    \
+    de.png    \
+    ee.png    \
+    gb.png    \
+    es.png    \
+    fi.png    \
+    fr.png    \
+    ge.png    \
+    gr.png    \
+    hr.png    \
+    hu.png    \
+    is.png    \
+    it.png    \
+    kz.png    \
+    lt.png    \
+    lv.png    \
+    no.png    \
+    pl.png    \
+    pt.png    \
+    ro.png    \
+    ru.png    \
+    se.png    \
+    si.png    \
+    sk.png    \
+    sr.png    \
+    ua.png    \
+    us.png    \
+    uz.png    \
+    zz.png
+
+EXTRA_DIST = $(images_DATA)
 all: all-am
 
 .SUFFIXES:
@@ -253,9 +285,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign man/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign data/flags/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign man/Makefile
+	  $(AUTOMAKE) --foreign data/flags/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -274,49 +306,27 @@ $(top_srcdir)/configure:  $(am__configure_deps)
 $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-install-man1: $(dist_man_MANS)
+install-imagesDATA: $(images_DATA)
 	@$(NORMAL_INSTALL)
-	@list1=''; \
-	list2='$(dist_man_MANS)'; \
-	test -n "$(man1dir)" \
-	  && test -n "`echo $$list1$$list2`" \
-	  || exit 0; \
-	echo " $(MKDIR_P) '$(DESTDIR)$(man1dir)'"; \
-	$(MKDIR_P) "$(DESTDIR)$(man1dir)" || exit 1; \
-	{ for i in $$list1; do echo "$$i"; done;  \
-	if test -n "$$list2"; then \
-	  for i in $$list2; do echo "$$i"; done \
-	    | sed -n '/\.1[a-z]*$$/p'; \
+	@list='$(images_DATA)'; test -n "$(imagesdir)" || list=; \
+	if test -n "$$list"; then \
+	  echo " $(MKDIR_P) '$(DESTDIR)$(imagesdir)'"; \
+	  $(MKDIR_P) "$(DESTDIR)$(imagesdir)" || exit 1; \
 	fi; \
-	} | while read p; do \
-	  if test -f $$p; then d=; else d="$(srcdir)/"; fi; \
-	  echo "$$d$$p"; echo "$$p"; \
-	done | \
-	sed -e 'n;s,.*/,,;p;h;s,.*\.,,;s,^[^1][0-9a-z]*$$,1,;x' \
-	      -e 's,\.[0-9a-z]*$$,,;$(transform);G;s,\n,.,' | \
-	sed 'N;N;s,\n, ,g' | { \
-	list=; while read file base inst; do \
-	  if test "$$base" = "$$inst"; then list="$$list $$file"; else \
-	    echo " $(INSTALL_DATA) '$$file' '$(DESTDIR)$(man1dir)/$$inst'"; \
-	    $(INSTALL_DATA) "$$file" "$(DESTDIR)$(man1dir)/$$inst" || exit $$?; \
-	  fi; \
-	done; \
-	for i in $$list; do echo "$$i"; done | $(am__base_list) | \
+	for p in $$list; do \
+	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
+	  echo "$$d$$p"; \
+	done | $(am__base_list) | \
 	while read files; do \
-	  test -z "$$files" || { \
-	    echo " $(INSTALL_DATA) $$files '$(DESTDIR)$(man1dir)'"; \
-	    $(INSTALL_DATA) $$files "$(DESTDIR)$(man1dir)" || exit $$?; }; \
-	done; }
+	  echo " $(INSTALL_DATA) $$files '$(DESTDIR)$(imagesdir)'"; \
+	  $(INSTALL_DATA) $$files "$(DESTDIR)$(imagesdir)" || exit $$?; \
+	done
 
-uninstall-man1:
+uninstall-imagesDATA:
 	@$(NORMAL_UNINSTALL)
-	@list=''; test -n "$(man1dir)" || exit 0; \
-	files=`{ for i in $$list; do echo "$$i"; done; \
-	l2='$(dist_man_MANS)'; for i in $$l2; do echo "$$i"; done | \
-	  sed -n '/\.1[a-z]*$$/p'; \
-	} | sed -e 's,.*/,,;h;s,.*\.,,;s,^[^1][0-9a-z]*$$,1,;x' \
-	      -e 's,\.[0-9a-z]*$$,,;$(transform);G;s,\n,.,'`; \
-	dir='$(DESTDIR)$(man1dir)'; $(am__uninstall_files_from_dir)
+	@list='$(images_DATA)'; test -n "$(imagesdir)" || list=; \
+	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*/||'`; \
+	dir='$(DESTDIR)$(imagesdir)'; $(am__uninstall_files_from_dir)
 tags TAGS:
 
 ctags CTAGS:
@@ -356,9 +366,9 @@ distdir: $(DISTFILES)
 	done
 check-am: all-am
 check: check-am
-all-am: Makefile $(MANS)
+all-am: Makefile $(DATA)
 installdirs:
-	for dir in "$(DESTDIR)$(man1dir)"; do \
+	for dir in "$(DESTDIR)$(imagesdir)"; do \
 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
 	done
 install: install-am
@@ -411,7 +421,7 @@ info: info-am
 
 info-am:
 
-install-data-am: install-man
+install-data-am: install-imagesDATA
 
 install-dvi: install-dvi-am
 
@@ -427,7 +437,7 @@ install-info: install-info-am
 
 install-info-am:
 
-install-man: install-man1
+install-man:
 
 install-pdf: install-pdf-am
 
@@ -455,9 +465,7 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-man
-
-uninstall-man: uninstall-man1
+uninstall-am: uninstall-imagesDATA
 
 .MAKE: install-am install-strip
 
@@ -465,13 +473,13 @@ uninstall-man: uninstall-man1
 	ctags-am distclean distclean-generic distdir dvi dvi-am html \
 	html-am info info-am install install-am install-data \
 	install-data-am install-dvi install-dvi-am install-exec \
-	install-exec-am install-html install-html-am install-info \
-	install-info-am install-man install-man1 install-pdf \
-	install-pdf-am install-ps install-ps-am install-strip \
-	installcheck installcheck-am installdirs maintainer-clean \
-	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
-	pdf-am ps ps-am tags-am uninstall uninstall-am uninstall-man \
-	uninstall-man1
+	install-exec-am install-html install-html-am \
+	install-imagesDATA install-info install-info-am install-man \
+	install-pdf install-pdf-am install-ps install-ps-am \
+	install-strip installcheck installcheck-am installdirs \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-generic pdf pdf-am ps ps-am tags-am uninstall \
+	uninstall-am uninstall-imagesDATA
 
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
