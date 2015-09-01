@@ -1,6 +1,7 @@
 gxkb (0.7.6-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update doc install path.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 01 Sep 2015 15:59:03 +0200
 

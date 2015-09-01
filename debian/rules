@@ -4,4 +4,4 @@
 	dh $@ --with autoreconf
 
 override_dh_installchangelogs:
-	dh_installchangelogs -k NEWS
+	dh_installchangelogs -k doc/NEWS
