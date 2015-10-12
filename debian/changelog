@@ -1,10 +1,10 @@
-gxkb (0.7.6-1) UNRELEASED; urgency=medium
+gxkb (0.7.6-1) unstable; urgency=medium
 
   * New upstream release.
-  * Update doc install path.
-  * Update debian/copyright for fix lintian warnings.
+  * Update debian rules to install NEWS file into doc sub-directory.
+  * Update debian/copyright to fix lintian warnings.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 01 Sep 2015 15:59:03 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 01 Sep 2015 21:04:55 +0200
 
 gxkb (0.7.5-1) unstable; urgency=medium
 
