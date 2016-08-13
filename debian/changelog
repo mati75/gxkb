@@ -5,6 +5,7 @@ gxkb (0.7.7-1) UNRELEASED; urgency=medium
     + Update homepage.
     + Bump Standards-Version to 3.9.8 (no changes needed).
     + Use secured links for VCS.
+  * Enable hardening.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 13 Aug 2016 19:20:17 +0200
 
