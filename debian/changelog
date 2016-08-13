@@ -1,6 +1,8 @@
 gxkb (0.7.7-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * debian/control:
+    + Update homepage.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 13 Aug 2016 19:20:17 +0200
 
