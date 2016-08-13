@@ -1,6 +1,6 @@
 /* statusicon.h
  *
- * Copyright (C) 2015 Dmitriy Poltavchenko <admin@linuxhub.ru>
+ * Copyright (C) 2016 Dmitriy Poltavchenko <admin@linuxhub.ru>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@ AppIndicator    *appindicator;
 GtkStatusIcon   *trayicon;
 statusicon_type icon_type;
 
-void            status_icon_new                     ( void );
+void            statusicon_new                      ( void );
 
 void            gtk_status_icon_clicked             ( GtkStatusIcon *status_icon,
                                                       gpointer data );

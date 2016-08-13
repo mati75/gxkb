@@ -1,6 +1,6 @@
 /* statusicon.c
  *
- * Copyright (C) 2015 Dmitriy Poltavchenko <admin@linuxhub.ru>
+ * Copyright (C) 2016 Dmitriy Poltavchenko <admin@linuxhub.ru>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #include "statusicon.h"
 
 void
-status_icon_new( void )
+statusicon_new( void )
 {
     #ifdef HAVE_APPINDICATOR
         appindicator = app_indicator_new(
