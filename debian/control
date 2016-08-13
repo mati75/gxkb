@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), libgtk2.0-dev, libxklavier-dev (>= 5.0), libwnc
 Standards-Version: 3.9.8
 Homepage: https://zen-tools.github.io/gxkb
 Vcs-Browser: https://github.com/mati75/gxkb.git
-Vcs-Git: git://github.com/mati75/gxkb.git
+Vcs-Git: https://github.com/mati75/gxkb.git
 
 Package: gxkb
 Architecture: any
