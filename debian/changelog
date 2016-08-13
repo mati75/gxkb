@@ -3,6 +3,7 @@ gxkb (0.7.7-1) UNRELEASED; urgency=medium
   * New upstream release.
   * debian/control:
     + Update homepage.
+    + Bump Standards-Version to 3.9.8 (no changes needed).
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 13 Aug 2016 19:20:17 +0200
 
