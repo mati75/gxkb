@@ -289,7 +289,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = src man doc data
-EXTRA_DIST = autogen.sh debian/patches debian/watch \
+EXTRA_DIST = autogen.sh debian/watch \
              debian/source/format debian/changelog \
              debian/compat debian/control \
              debian/copyright debian/rules
@@ -751,9 +751,9 @@ uninstall-am:
 	pdf-am ps ps-am tags tags-am uninstall uninstall-am
 
 
-# Don't put .svn directories in the distribution file
+# Don't put .git directories in the distribution file
 dist-hook:
-	rm -rf `find $(distdir)/ -type d -name .svn`
+	rm -rf `find $(distdir)/ -type d -name .git`
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
