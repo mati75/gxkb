@@ -20,7 +20,7 @@
 #include "statusicon.h"
 
 void
-statusicon_new( void )
+status_icon_new( void )
 {
     #ifdef HAVE_APPINDICATOR
         appindicator = app_indicator_new(
