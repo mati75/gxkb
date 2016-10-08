@@ -104,6 +104,8 @@ xkb_free( t_xkb_settings *xkb )
         kbd_config_free( xkb->kbd_config );
 
     g_free( xkb );
+
+    statusicon_free();
 }
 
 void
@@ -284,6 +286,9 @@ xkb_load_config( t_xkb_settings *xkb, const gchar *filename )
 gboolean
 xkb_is_config_changed( t_xkb_settings *xkb_old, t_xkb_settings *xkb_new )
 {
+    if( !xkb_old->kbd_config || !xkb_new->kbd_config )
+        return FALSE;
+
     if( xkb_old->group_policy != xkb_new->group_policy)
         return TRUE;
 
@@ -371,7 +376,7 @@ int main( int argc, char *argv[] )
     if( xkb_config_initialize( xkb, xkb_state_changed, xkb ) )
         xkb_refresh( xkb );
 
-    statusicon_new();
+    status_icon_new();
 
     // Save original config
     t_xkb_settings *orig_config = g_new0( t_xkb_settings, 1 );
@@ -396,8 +401,6 @@ int main( int argc, char *argv[] )
     g_free( last_config );
     g_free( config_file );
     xkb_free( xkb );
-    statusicon_free();
 
     return 0;
 }
-
