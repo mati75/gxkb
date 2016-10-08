@@ -1,6 +1,7 @@
 gxkb (0.7.8-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Bump debhelper compat version to 10.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 08 Oct 2016 23:50:11 +0200
 
