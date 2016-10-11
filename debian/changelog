@@ -1,9 +1,9 @@
-gxkb (0.7.8-1) UNRELEASED; urgency=medium
+gxkb (0.7.8-1) unstable; urgency=medium
 
   * New upstream release.
   * Bump debhelper compat version to 10.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 08 Oct 2016 23:50:11 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 09 Oct 2016 00:02:23 +0200
 
 gxkb (0.7.7-1) unstable; urgency=medium
 
