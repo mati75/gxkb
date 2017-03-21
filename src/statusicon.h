@@ -44,7 +44,7 @@ AppIndicator    *appindicator;
 GtkStatusIcon   *trayicon;
 statusicon_type icon_type;
 
-void            status_icon_new                     ( void );
+void            statusicon_new                      ( void );
 
 void            gtk_status_icon_clicked             ( GtkStatusIcon *status_icon,
                                                       gpointer data );

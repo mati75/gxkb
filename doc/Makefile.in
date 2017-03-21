@@ -230,6 +230,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+runstatedir = @runstatedir@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -238,8 +239,8 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-doc_DATA = CREDITS AUTHORS NEWS
-EXTRA_DIST = $(doc_DATA) INSTALL COPYING
+doc_DATA = CREDITS AUTHORS NEWS COPYING
+EXTRA_DIST = $(doc_DATA) INSTALL
 all: all-am
 
 .SUFFIXES:
