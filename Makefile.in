@@ -280,6 +280,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+runstatedir = @runstatedir@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -292,7 +293,8 @@ SUBDIRS = src man doc data
 EXTRA_DIST = autogen.sh debian/watch \
              debian/source/format debian/changelog \
              debian/compat debian/control \
-             debian/copyright debian/rules
+             debian/copyright debian/rules \
+             README.md
 
 all: all-recursive
 
