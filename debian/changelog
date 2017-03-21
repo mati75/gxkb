@@ -1,6 +1,8 @@
-gxkb (0.7.8-2) UNRELEASED; urgency=medium
+gxkb (0.7.9-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Enable support for indicator.
+  * Add repack script.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 06 Nov 2016 23:03:30 +0100
 
