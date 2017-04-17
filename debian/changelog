@@ -3,6 +3,8 @@ gxkb (0.7.9-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Enable support for indicator.
   * Add repack script.
+  * Add debian/patches/drop-copying.patch to drop coping no needed coping
+    file.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 06 Nov 2016 23:03:30 +0100
 
