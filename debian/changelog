@@ -1,4 +1,4 @@
-gxkb (0.7.9-1) UNRELEASED; urgency=medium
+gxkb (0.7.9-1) experimental; urgency=medium
 
   * New upstream release.
   * Enable support for indicator.
@@ -6,7 +6,7 @@ gxkb (0.7.9-1) UNRELEASED; urgency=medium
   * Add debian/patches/drop-copying.patch to drop coping no needed coping
     file.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 06 Nov 2016 23:03:30 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 23 Apr 2017 18:20:21 +0200
 
 gxkb (0.7.8-1) unstable; urgency=medium
 
