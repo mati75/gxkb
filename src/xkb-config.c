@@ -1,6 +1,6 @@
 /* xkb-config.c
  *
- * Copyright (C) 2016 Dmitriy Poltavchenko <admin@linuxhub.ru>
+ * Copyright (C) 2016 Dmitriy Poltavchenko <poltavchenko.dmitriy@gmail.com>
  *
  * Copyright (C) 2008 Alexander Iliev <sasoiliev@mamul.org>
  *
@@ -743,7 +743,8 @@ xkb_config_xkl_config_changed( XklEngine *engine )
 void
 xkb_config_xkl_new_device( XklEngine *engine, gpointer data )
 {
-    xkl_config_rec_activate( config->config_rec, engine );
+    if( !config->settings->never_modify_config )
+        xkl_config_rec_activate( config->config_rec, engine );
 }
 
 GdkFilterReturn
