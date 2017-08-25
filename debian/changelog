@@ -1,3 +1,9 @@
+gxkb (0.8.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 25 Aug 2017 13:39:44 +0200
+
 gxkb (0.7.9-2) unstable; urgency=medium
 
   * Bump Standards-Version to 4.0.0 (no changes needed).
