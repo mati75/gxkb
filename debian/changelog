@@ -1,9 +1,9 @@
-gxkb (0.8.0-1) UNRELEASED; urgency=medium
+gxkb (0.8.0-1) unstable; urgency=medium
 
   * New upstream release.
-  * Bump Standards-Version to 4.1.0 (no changes needed).
+  * Bump Standards-Version to 4.1.1 (no changes needed).
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 25 Aug 2017 13:39:44 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 04 Nov 2017 12:09:50 +0100
 
 gxkb (0.7.9-2) unstable; urgency=medium
 
