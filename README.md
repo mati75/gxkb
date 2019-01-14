@@ -1,4 +1,5 @@
 # **gxkb**
+[![Latest release](https://img.shields.io/github/release/zen-tools/gxkb.svg)](https://github.com/zen-tools/gxkb/releases) [![Build Status](https://travis-ci.org/zen-tools/gxkb.svg?branch=master)](https://travis-ci.org/zen-tools/gxkb)
 
 `X11` keyboard layout indicator and switcher
 
@@ -53,6 +54,7 @@ sudo apt-get install gxkb
     wget https://github.com/zen-tools/gxkb/archive/master.tar.gz -O gxkb.tar.gz
     tar xzf gxkb.tar.gz
     cd gxkb-master
+    ./autogen.sh
     ./configure
     ```
     For AppIndicator support:
@@ -137,8 +139,7 @@ Instead of `grp:alt_shift_toggle` you can use whatever the following command giv
   **Q**: _The layout icon is not displayed in system tray area._  
   **A**: In "sessions and startup" settings try to find and disable
   <code>indicator&#8209;application&#8209;service</code>.  
-  More details [here](http://www.linuxhub.ru/viewtopic.php?p=6347#p6347) and
-  [there](https://forum.xfce.org/viewtopic.php?pid=32908#p32908).
+  More details [here](https://forum.xfce.org/viewtopic.php?pid=32908#p32908).
 
 * In Unity + AppIndicator:  
   **Q**: _The layout switching does not work._  
@@ -149,4 +150,3 @@ Instead of `grp:alt_shift_toggle` you can use whatever the following command giv
   Another solution may be to remove the package
   <code>indicator&#8209;keyboard</code>, but that will also remove the Unity
   control center, which will be replaced by a Gnome control center.
-
