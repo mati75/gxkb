@@ -1,9 +1,9 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: gxkb
-Source: http://sourceforge.net/projects/gxkb/files/
+Source: https://sourceforge.net/projects/gxkb/files/
 
 Files: *
-Copyright: 2013-2015, Dmitriy Poltavchenko <admin@linuxhub.ru>
+Copyright: 2013-2019, Dmitriy Poltavchenko <admin@linuxhub.ru>
 License: GPL-2+
 
 Files: Makefile.am
@@ -70,7 +70,7 @@ License: GPL-2+
 
 Files: debian/*
 Copyright: 2013, Dmitriy Poltavchenko <zen@root.ua>
-           2014, Mateusz Łukasik <mati75@linuxmint.pl>
+           2014-2019, Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-2+
 
 License: GPL-2+
