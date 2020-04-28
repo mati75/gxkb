@@ -1,7 +1,7 @@
 gxkb (0.8.1-1) UNRELEASED; urgency=medium
 
   * New upstream release.
-  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Bump Standards-Version to 4.5.0 (no changes needed)
   * Bump minimal dh version to 12.
   * d/patches:
     + Add fix-ftbfs-gcc-10.patch for fix FTBFS with gcc-10. (Closes: #957325)
