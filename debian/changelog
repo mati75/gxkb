@@ -1,5 +1,6 @@
 gxkb (0.8.1-1) UNRELEASED; urgency=medium
-
+  
+  [ Mateusz Łukasik ]
   * New upstream release.
   * Bump Standards-Version to 4.5.0 (no changes needed)
   * Bump minimal dh version to 12.
@@ -10,8 +11,18 @@ gxkb (0.8.1-1) UNRELEASED; urgency=medium
     + Add ayatana-appindicator.patch for switch to ayatana-appindicator.
       (Closes: #956771)
   * d/control: Switch B-D from libappindicator-dev to libayatana-appindicator-dev.
+ 
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * debian/copyright: use spaces rather than tabs to start continuation
+    lines.
+  * Use secure URI in debian/watch.
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Archive, Bug-Database, Bug-Submit,
+    Repository, Repository-Browse.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Mon, 14 Jan 2019 06:35:51 +0100
+ -- Debian Janitor <janitor@jelmer.uk>  Fri, 24 Apr 2020 08:05:25 +0000
 
 gxkb (0.8.0-1) unstable; urgency=medium
 

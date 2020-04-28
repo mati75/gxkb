@@ -65,7 +65,7 @@ License: BSD-3-clause
 
 Files: src/gxkb.c
 Copyright: 2008, Alexander Iliev <sasoiliev@mamul.org>
-	   2014, Dmitriy Poltavchenko <admin@linuxhub.ru>
+           2014, Dmitriy Poltavchenko <admin@linuxhub.ru>
 License: GPL-2+
 
 Files: debian/*
