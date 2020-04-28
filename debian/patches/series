@@ -1,3 +1,4 @@
 drop-copying.patch
 fix-ftbfs-gcc-10.patch
 fix-cross-build.patch
+ayatana-appindicator.patch

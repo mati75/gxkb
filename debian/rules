@@ -6,6 +6,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 	dh $@
 
 override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure -- --enable-appindicator=yes
 
 override_dh_installchangelogs:

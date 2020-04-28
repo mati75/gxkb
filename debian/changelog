@@ -7,6 +7,8 @@ gxkb (0.8.1-1) UNRELEASED; urgency=medium
     + Add fix-ftbfs-gcc-10.patch for fix FTBFS with gcc-10. (Closes: #957325)
     + Add fix-cross-build.patch for fix FTCBFS: hard codes the build 
       architecture pkg-config (Closes: #958484)
+    + Add ayatana-appindicator.patch for switch to ayatana-appindicator.
+      (Closes: #956771)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Mon, 14 Jan 2019 06:35:51 +0100
 

@@ -1,0 +1,27 @@
+Description: Switch to ayatana-appindicator
+Author: Mateusz Łukasik <mati75@linuxmint.pl>
+Bug-Debian: https://bugs.debian.org/956771
+Last-Update: 2020-04-28
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -43,7 +43,7 @@ fi
+ if test x$enable_appindicator = xyes ; then
+     PKG_CHECK_MODULES(
+         APPINDICATOR,
+-        [appindicator-0.1 >= $APPINDICATOR_REQUIRED_VERSION],
++        [ayatana-appindicator-0.1 >= $APPINDICATOR_REQUIRED_VERSION],
+         [AC_DEFINE(HAVE_APPINDICATOR, 1, [Have AppIndicator])]
+     )
+ fi
+--- a/src/statusicon.h
++++ b/src/statusicon.h
+@@ -25,7 +25,7 @@
+ #endif
+ 
+ #ifdef HAVE_APPINDICATOR
+-#   include <libappindicator/app-indicator.h>
++#   include <libayatana-appindicator/app-indicator.h>
+ #endif
+ 
+ #include <gtk/gtk.h>
