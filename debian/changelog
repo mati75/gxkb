@@ -3,6 +3,8 @@ gxkb (0.8.1-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Bump Standards-Version to 4.3.0 (no changes needed)
   * Bump minimal dh version to 12.
+  * d/patches:
+    + Add fix-ftbfs-gcc-10.patch. (Closes: #957325)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Mon, 14 Jan 2019 06:35:51 +0100
 

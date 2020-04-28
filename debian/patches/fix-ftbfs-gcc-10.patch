@@ -1,0 +1,51 @@
+From ca3d6fd5332e2445bd73e35eadb320d024370298 Mon Sep 17 00:00:00 2001
+From: Dmitriy Poltavchenko <dimitry.poltavchenko@internetvikings.com>
+Date: Tue, 28 Apr 2020 00:43:44 +0300
+Subject: [PATCH] Fix ftbfs with GCC-10
+
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=957325
+---
+ src/statusicon.c | 9 +++++++++
+ src/statusicon.h | 9 ---------
+ 2 files changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/src/statusicon.c b/src/statusicon.c
+index b028fcb..adc0619 100644
+--- a/src/statusicon.c
++++ b/src/statusicon.c
+@@ -19,6 +19,15 @@
+ 
+ #include "statusicon.h"
+ 
++GtkWidget       *lb_mouse_popup;
++GtkWidget       *rb_mouse_popup;
++#ifdef HAVE_APPINDICATOR
++AppIndicator    *appindicator;
++#endif
++GtkStatusIcon   *trayicon;
++GHashTable      *icon_cache;
++statusicon_type icon_type;
++
+ void
+ statusicon_new( void )
+ {
+diff --git a/src/statusicon.h b/src/statusicon.h
+index 6b736e8..676581a 100644
+--- a/src/statusicon.h
++++ b/src/statusicon.h
+@@ -36,15 +36,6 @@
+ 
+ typedef enum {SYSTRAY, APPINDICATOR} statusicon_type;
+ 
+-GtkWidget       *lb_mouse_popup;
+-GtkWidget       *rb_mouse_popup;
+-#ifdef HAVE_APPINDICATOR
+-AppIndicator    *appindicator;
+-#endif
+-GtkStatusIcon   *trayicon;
+-GHashTable      *icon_cache;
+-statusicon_type icon_type;
+-
+ void            statusicon_new                      ( void );
+ 
+ void            gtk_status_icon_clicked             ( GtkStatusIcon *status_icon,
