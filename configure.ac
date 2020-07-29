@@ -1,4 +1,4 @@
-AC_INIT([gxkb], [0.8.1], [poltavchenko.dmitriy@gmail.com], [gxkb], [https://zen-tools.github.io/gxkb])
+AC_INIT([gxkb], [0.8.2], [poltavchenko.dmitriy@gmail.com], [gxkb], [https://zen-tools.github.io/gxkb])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign ])
 AC_CONFIG_SRCDIR([src/gxkb.c])
 AC_CONFIG_HEADERS([src/config.h])
@@ -34,7 +34,7 @@ AC_ARG_ENABLE(
 
 if test x$enable_appindicator = xauto ; then
     PKG_CHECK_EXISTS(
-        appindicator-0.1 >= $APPINDICATOR_REQUIRED_VERSION,
+        ayatana-appindicator-0.1 >= $APPINDICATOR_REQUIRED_VERSION,
         [enable_appindicator="yes"],
         [enable_appindicator="no"]
     )
@@ -43,7 +43,7 @@ fi
 if test x$enable_appindicator = xyes ; then
     PKG_CHECK_MODULES(
         APPINDICATOR,
-        [appindicator-0.1 >= $APPINDICATOR_REQUIRED_VERSION],
+        [ayatana-appindicator-0.1 >= $APPINDICATOR_REQUIRED_VERSION],
         [AC_DEFINE(HAVE_APPINDICATOR, 1, [Have AppIndicator])]
     )
 fi
@@ -53,7 +53,7 @@ AC_SUBST(APPINDICATOR_CFLAGS)
 AC_SUBST(APPINDICATOR_LIBS)
 
 AC_DEFINE(AUTHORS, ["Dmitriy Poltavchenko <poltavchenko.dmitriy@gmail.com>\nMichael Ivanchenko <ivanchenko.michael.work@gmail.com>"], [list of authors])
-AC_DEFINE(COPYRIGHT, ["Copyright (C) 2013-2019 Dmitriy Poltavchenko"], [copyright])
+AC_DEFINE(COPYRIGHT, ["Copyright (C) 2013-2020 Dmitriy Poltavchenko"], [copyright])
 AC_DEFINE(DESCRIPTION, ["X11 Keyboard switcher"], [description])
 
 AC_DEFINE(WNCK_I_KNOW_THIS_IS_UNSTABLE, 1, [libwnck is happy with this])
