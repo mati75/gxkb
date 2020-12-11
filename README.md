@@ -13,9 +13,10 @@ The applet is written in `C` and uses `GTK+` library and therefore does not depe
 
 ## **Dependencies**
 
-* `GTK2`
-* `libwnck22`
+* `GTK3`
+* `libwnck-3`
 * `libxklavier16`
+* `libayatana-appindicator3`
 
 ## **Installing**
 
@@ -41,11 +42,11 @@ sudo apt-get install gxkb
     + Debian
 
         ```bash
-        sudo apt-get install libwnck-dev libxklavier-dev libgtk2.0-dev
+        sudo apt-get install libwnck-3-dev libxklavier-dev libgtk-3-dev dh-autoreconf dh-make devscripts fakeroot
         ```
         For AppIndicator support:
         ```bash
-        sudo apt-get install libappindicator-dev
+        sudo apt-get install libayatana-appindicator3-dev
         ```
 
 * Build
@@ -113,8 +114,8 @@ The most interesting options are:
 `layouts=us,ru,ua`  
 `toggle_option=grp:alt_shift_toggle,grp_led:scroll,terminate:ctrl_alt_bksp`
 
-Instead of `grp:alt_shift_toggle` you can use whatever the following command gives you:  
-`grep grp:.*toggle /usr/share/X11/xkb/rules/base.lst`  
+Instead of `grp:alt_shift_toggle` you can use whatever the following command gives you:
+`grep grp:.*toggle /usr/share/X11/xkb/rules/base.lst`
 
 ## **Known issues**
 
@@ -130,7 +131,7 @@ Instead of `grp:alt_shift_toggle` you can use whatever the following command giv
 * In Gnome3/Unity:  
   **Q**: _The layout icon is not displayed in system tray area._  
   **A**: Due to different versions of Gnome3 there is no easy answer, Google
-  might help to find the right one.  
+  might help to find the right one.
   But in fact `gxkb` works under the hood, so you can use the Gnome3/Unity
   system indicators for icon displaying, just don't forget to disable the
   splitting layouts between different windows.
