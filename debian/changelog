@@ -1,8 +1,9 @@
 gxkb (0.9.0-1) UNRELEASED; urgency=medium
 
   * New upstream release.
-    + Switch to GTK3. (Closes: #967515) 
+    + Switch to GTK3. (Closes: #967515)
   * Bump Standards-Version to 4.5.1 (no changes needed)
+  * d/control: Add Rules-Requires-Root.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 11 Dec 2020 21:14:31 +0100
 
