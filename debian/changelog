@@ -1,4 +1,4 @@
-gxkb (0.9.0-1) UNRELEASED; urgency=medium
+gxkb (0.9.0-1) unstable; urgency=medium
 
   * New upstream release.
     + Switch to GTK3. (Closes: #967515)
@@ -6,7 +6,7 @@ gxkb (0.9.0-1) UNRELEASED; urgency=medium
   * d/control: Add Rules-Requires-Root.
   * Bump version d/watch.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 11 Dec 2020 21:14:31 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 12 Dec 2020 14:26:14 +0100
 
 gxkb (0.8.2-1) unstable; urgency=medium
 
