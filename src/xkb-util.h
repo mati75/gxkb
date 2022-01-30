@@ -1,6 +1,6 @@
 /* xkb-util.h
  *
- * Copyright (C) 2016 Dmitriy Poltavchenko <poltavchenko.dmitriy@gmail.com>
+ * Copyright (C) 2016 Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
  *
  * Copyright (C) 2008 Alexander Iliev <sasoiliev@mamul.org>
  *
@@ -23,21 +23,21 @@
 #define __GXKB_UTIL_H__
 
 #ifdef HAVE_CONFIG_H
-#   include "config.h"
+#include "config.h"
 #endif
 
 #include <glib.h>
 
-gchar*      xkb_util_get_flag_filename      (const gchar* group_name,
-                                             const gchar *variant);
+gchar *xkb_util_get_flag_filename(const gchar *group_name,
+                                  const gchar *variant);
 
-gchar*      xkb_util_get_layout_string      (const gchar* group_name,
-                                             const gchar* variant);
+gchar *xkb_util_get_layout_string(const gchar *group_name,
+                                  const gchar *variant);
 
-gchar*      xkb_util_get_data_dir           (void);
+gchar *xkb_util_get_data_dir(void);
 
-gchar*      xkb_util_get_config_dir         (void);
+gchar *xkb_util_get_config_dir(void);
 
-gchar*      xkb_util_get_config_file        (void);
+gchar *xkb_util_get_config_file(void);
 
 #endif
