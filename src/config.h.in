@@ -15,9 +15,6 @@
 /* Include config.h */
 #undef HAVE_CONFIG_H
 
-/* libxklavier version */
-#undef LIBXKLAVIER_VERSION
-
 /* Name of package */
 #undef PACKAGE
 
