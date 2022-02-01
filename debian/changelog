@@ -1,9 +1,9 @@
-gxkb (0.9.3-1) UNRELEASED; urgency=medium
+gxkb (0.9.3-1) unstable; urgency=medium
 
   * New upstream release.
   * Drop debian/patches/fix-cross-build.patch -- included upstream.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 30 Jan 2022 10:50:51 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 30 Jan 2022 10:58:40 +0100
 
 gxkb (0.9.2-1) unstable; urgency=medium
 
