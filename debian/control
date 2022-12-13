@@ -1,0 +1,27 @@
+Source: gxkb
+Priority: optional
+Section: x11
+Maintainer: Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
+Uploaders: Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
+Build-Depends: libgtk-3-dev ( >= 3.14.0 ),
+  libxklavier16 ( >= 5.0 ), libwnck-3-0 ( >= 3.4.9 ),
+  libgtk-3-dev, libxklavier-dev (>= 5.0), libwnck-3-dev,
+  libayatana-appindicator3-dev, debhelper (>= 10), dh-make, dh-autoreconf
+Standards-Version: 4.5.0
+Homepage: https://zen-tools.github.io/gxkb
+Vcs-Git: https://github.com/zen-tools/gxkb.git
+Vcs-Browser: https://github.com/zen-tools/gxkb
+
+Package: gxkb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: xkb-data
+Description: X11 keyboard indicator and switcher
+ gxkb is a little indicator applet which allows one to quickly
+ switch between different keyboard layouts in X. A flag
+ corresponding to the country of the active layout is shown
+ in the indicator area.
+ .
+ The applet is written in C and uses the GTK+ library and
+ therefore does not depend on any GNOME components.
+
