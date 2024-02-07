@@ -1,11 +1,11 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: gxkb
-Source: https://sourceforge.net/projects/gxkb/files/
+Source: https://github.com/zen-tools/gxkb
 Files-Excluded:
     debian/*
 
 Files: *
-Copyright: 2013-2019, Dmitriy Poltavchenko <admin@linuxhub.ru>
+Copyright: 2013-2024, Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
 License: GPL-2+
 
 Files: Makefile.am
@@ -67,12 +67,12 @@ License: BSD-3-clause
 
 Files: src/gxkb.c
 Copyright: 2008, Alexander Iliev <sasoiliev@mamul.org>
-           2014, Dmitriy Poltavchenko <admin@linuxhub.ru>
+           2014, Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
 License: GPL-2+
 
 Files: debian/*
-Copyright: 2013, Dmitriy Poltavchenko <zen@root.ua>
-           2014-2019, Mateusz Łukasik <mati75@linuxmint.pl>
+Copyright: 2013, Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
+           2014-2024, Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-2+
 
 License: GPL-2+
