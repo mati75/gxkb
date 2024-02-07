@@ -1,4 +1,4 @@
-gxkb (0.9.4-1) UNRELEASED; urgency=medium
+gxkb (0.9.5-1) UNRELEASED; urgency=medium
 
   [ Debian Janitor ]
   * Remove constraints unnecessary since buster:
