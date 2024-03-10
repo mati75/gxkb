@@ -1,4 +1,4 @@
-gxkb (0.9.5-1) UNRELEASED; urgency=medium
+gxkb (0.9.5-1) unstable; urgency=medium
 
   [ Debian Janitor ]
   * Remove constraints unnecessary since buster:
@@ -10,7 +10,7 @@ gxkb (0.9.5-1) UNRELEASED; urgency=medium
   * Update d/watch.
   * Update d/copyright.
 
- -- Debian Janitor <janitor@jelmer.uk>  Wed, 02 Feb 2022 08:00:42 -0000
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 16 Feb 2024 20:40:02 +0100
 
 gxkb (0.9.3-1) unstable; urgency=medium
 
