@@ -2,6 +2,7 @@ gxkb (0.9.6-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update d/copyright.
+  * Bump Standards-Version to 4.7.0 (no changes needed)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 11 Aug 2024 23:26:15 +0200
 
