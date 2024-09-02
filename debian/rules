@@ -9,5 +9,9 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure -- --enable-appindicator=yes
 
+override_dh_auto_install:
+	dh_auto_install
+	rm debian/gxkb/usr/share/doc/gxkb/COPYING
+
 override_dh_installchangelogs:
 	dh_installchangelogs -k doc/NEWS
