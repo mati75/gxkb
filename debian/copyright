@@ -10,6 +10,7 @@ Copyright: 2013-2024, Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
 License: GPL-2+
 
 Files: Makefile.am
+       src/Makefile.am
 Copyright: 2006, Free Software Foundation, Inc.
 License: PERMISSIVE
  This Makefile.am is free software; the Free Software Foundation
@@ -19,9 +20,31 @@ Files: src/gettext.h
 Copyright: 1995-1998, 2000-2002, 2004-2006, 2009-2020, Free Software Foundation, Inc.
 License: LGPL-2.1+
 
+Files: doc/INSTALL
+Copyright: 1994 - 1996, 1999 - 2002, 2004-2009 Free Software Foundation, Inc.
+License: FSFAP
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY, to the extent permitted by law; without even
+ the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.
+
 Files: src/gxkb.c
 Copyright: 2008, Alexander Iliev <sasoiliev@mamul.org>
            2014, Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
+License: GPL-2+
+
+Files: src/xkb-util.c
+       src/xkb-config.h
+       src/xkb-util.h
+       src/xkb-callbacks.h
+       src/xkb-config.c
+       src/xkb-callbacks.c
+Copyright: 2008, Alexander Iliev <sasoiliev@mamul.org>
+           2016, Dmytro Poltavchenko <dmytro.poltavchenko@gmail.com>
 License: GPL-2+
 
 Files: debian/*

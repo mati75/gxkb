@@ -7,7 +7,7 @@ gxkb (0.9.6+ds-1) unstable; urgency=medium
     d/rules.
   * Add configuration for repack upstream sources.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 15 Sep 2024 20:31:16 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 20 Sep 2024 20:35:57 +0200
 
 gxkb (0.9.5-1) unstable; urgency=medium
 
